@@ -1,13 +1,12 @@
 import { EmojiRow } from "../EmojiRow/EmojiRow";
 
+export interface IEmoji {
+  title: string;
+  symbol: string;
+  keywords: string;
+}
 interface IProps {
-  emojies: [
-    {
-      title: string;
-      symbol: string;
-      keywords: string;
-    }
-  ];
+  emojies: [IEmoji];
 }
 
 export const EmojiContainer = ({ emojies }: IProps) => {
